@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: https://site-rose-six.vercel.app/
 title: ExampleSite
 paginate: 5
 theme: PaperMod
