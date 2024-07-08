@@ -50,15 +50,15 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "img/profile.png"
-    favicon16x16: "img/profile.png"
-    favicon32x32: "img/profile.png"
-    apple_touch_icon: "img/profile.png"
-    safari_pinned_tab: "img/profile.png"
+    favicon: "img/favicon.ico"
+    favicon16x16: "img/favicon16x16.ico"
+    favicon32x32: "img/favicon32x32.ico"
+    apple_touch_icon: "img/favicon.ico"
+    safari_pinned_tab: "svg/safari_pinned_tab.svg"
 
   label:
     text: "Home"
-    icon: /img/profile.png
+    icon: /img/favicon.ico
     iconHeight: 35
 
   # profile-mode
@@ -131,7 +131,7 @@ menu:
       url: /tags/
       weight: 20
     - identifier: search
-      name: "🔍 Search"
+      name: "Search 🔍"
       url: /search/
       weight: 30
 
