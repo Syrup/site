@@ -889,6 +889,6 @@ Source: <https://gist.github.com/roachhd/1f029bd4b50b8a524f3c>
 :small_red_triangle:
 
 <details>
-  <summary>Click to :eyes: the code</summary>
+  <summary>Click to 👀 the code</summary>
   <script src="https://gist.github.com/roachhd/1f029bd4b50b8a524f3c.js"></script>
 </details>
