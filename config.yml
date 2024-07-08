@@ -1,5 +1,5 @@
 baseURL: https://site-rose-six.vercel.app/
-title: ExampleSite
+title: Syrup's Blog
 paginate: 5
 theme: PaperMod
 
@@ -7,6 +7,13 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 minify:
   disableXML: true
@@ -14,12 +21,12 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  title: Syrup's Blog
+  description: "| 💻 Programmer | 👾 Backend Dev | 😻 Cat Lovers |"
+  keywords: [Blog, Portfolio]
+  author: Syrup
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["img/profile.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -28,13 +35,13 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: false
@@ -43,26 +50,27 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "img/profile.png"
+    favicon16x16: "img/profile.png"
+    favicon32x32: "img/profile.png"
+    apple_touch_icon: "img/profile.png"
+    safari_pinned_tab: "img/profile.png"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: /img/profile.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    enabled: true # needs to be explicitly set
+    title: Syrup
+    # subtitle: "Hello, I go by Syrup on the internet. I'm a backend developer and I'm still in the high school. I love to write about programming, tech, and sometimes about my life. I'm also a fan of open-source software and I'm always looking for ways to contribute to the community. I hope you enjoy reading my blog posts and find them helpful. If you have any questions or want to contact me, feel free to reach out to me on social media or via email. It's below here ⬇"
+    subtitle: "| 💻 Programmer | 👾 Backend Dev | 😻 Cat Lovers |"
+    imageUrl: "img/profile.png"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: "Kyawoo"
     buttons:
       - name: Posts
         url: posts
@@ -70,17 +78,17 @@ params:
         url: tags
 
   # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+  # homeInfoParams:
+  #   Title: "Hi there \U0001F44B"
+  #   Content: Welcome to my blog
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    - name: discord
+      url: "https://discord.com/users/681843628317868049"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/Syrup"
+    - name: email
+      url: "mailto:goodgamersz665@gmail.com"
 
   analytics:
     google:
@@ -96,7 +104,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/Syrup/site/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -111,6 +119,7 @@ params:
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
     - identifier: categories
@@ -121,17 +130,21 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: search
+      name: "🔍 Search"
+      url: /search/
       weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    noClasses: true
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
+  goldmark:
+    renderer:
+      unsafe: true

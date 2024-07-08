@@ -1,0 +1,10 @@
+/* @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/chaos.css'); */
+
+.chroma {
+  background-color: unset;
+}
+
+.comment-section-class {
+  background-color: inherit;
+  /* Or specify the exact color if 'inherit' doesn't work */
+}
