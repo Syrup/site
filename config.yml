@@ -8,6 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+copyright: "© 2024 [Syrup](https://github.com/Syrup)"
 
 outputs:
   home:
@@ -26,7 +27,7 @@ params:
   keywords: [Blog, Portfolio]
   author: Syrup
   # author: ["Me", "You"] # multiple authors
-  images: ["img/profile.png"]
+  images: ["profile.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -50,11 +51,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "img/favicon.ico"
-    favicon16x16: "img/favicon16x16.ico"
-    favicon32x32: "img/favicon32x32.ico"
-    apple_touch_icon: "img/favicon.ico"
-    safari_pinned_tab: "svg/safari_pinned_tab.svg"
+    favicon: "https://raw.githubusercontent.com/Syrup/site/main/assets/img/favicon.ico"
+    favicon16x16: "https://raw.githubusercontent.com/Syrup/site/main/assets/img/favicon16x16.ico"
+    favicon32x32: "https://raw.githubusercontent.com/Syrup/site/main/assets/img/favicon32x32.ico"
+    apple_touch_icon: "https://raw.githubusercontent.com/Syrup/site/main/assets/img/favicon.ico"
+    safari_pinned_tab: "https://raw.githubusercontent.com/Syrup/site/main/assets/svg/safari_pinned_tab.svg"
 
   label:
     text: "Home"
@@ -67,7 +68,7 @@ params:
     title: Syrup
     # subtitle: "Hello, I go by Syrup on the internet. I'm a backend developer and I'm still in the high school. I love to write about programming, tech, and sometimes about my life. I'm also a fan of open-source software and I'm always looking for ways to contribute to the community. I hope you enjoy reading my blog posts and find them helpful. If you have any questions or want to contact me, feel free to reach out to me on social media or via email. It's below here ⬇"
     subtitle: "| 💻 Programmer | 👾 Backend Dev | 😻 Cat Lovers |"
-    imageUrl: "img/profile.png"
+    imageUrl: "https://raw.githubusercontent.com/Syrup/site/main/assets/img/profile.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Kyawoo"
