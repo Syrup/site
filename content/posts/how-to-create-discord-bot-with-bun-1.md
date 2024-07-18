@@ -6,7 +6,7 @@ tags: ["typescript", "bun"]
 author: "Syrup"
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: true
 ---
