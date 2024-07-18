@@ -10,7 +10,6 @@ TocOpen: false
 # draft: true
 hidemeta: false
 comments: true
-description: "Desc Text."
 ---
 
 ## Introduction

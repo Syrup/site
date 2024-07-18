@@ -2,5 +2,6 @@
   "MD033": {
     "allowed_elements": ["details", "summary", "script"]
   },
-  "MD013": false
+  "MD013": false,
+  "MD029": false
 }
