@@ -175,7 +175,7 @@ Next, we'll create some *magic ✨*
 
 ```ts
 const chat = model.startChat();
-const prompt = "Create a file gajah.txt containing 'Elephant'";
+const prompt = "Create a file elephant.txt containing 'Elephant'";
 
 const result = await chat.sendMessage(prompt)
 
